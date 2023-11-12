@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mybatis-test
+    driverClassName: org.h2.Driver
+    username: sa
+    hikari:
+      maximum-pool-size: 4
+  h2:
+    console:
+      enabled: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # snake case to camel case for db fields
+
+    # for xml mapper. if you use annotation mapper, should be removed.
+#    mapper-locations: mybatis-mapper/**/*.xml # location to mappers
+#    type-aliases-package: com.example.mybatis.demo.model # to skip package name
+
+# log level for mapper
+logging:
+  level:
+    com.example.mybatis.demo.repository: TRACE
