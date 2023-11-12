@@ -165,6 +165,8 @@ public interface ProductMapper {
 
 ```
 
+## 테스트 코드 작성
+@MybatisTest 어노테이션을 이용하여 테스트: [파일 링크](https://github.com/chunghee-hwang/mybatis-springboot-example/blob/main/src/test/java/com/example/mybatis/demo/ProductServiceTest.java)
 
 ## References
 - https://medium.com/@andisyafrianda/why-mybatis-489b01f48905
